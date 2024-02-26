@@ -1,0 +1,29 @@
+{
+    "name": "custom",
+    "uri": "http://custom/ns",
+    "associations": [],
+    "types": [
+      {
+        "name": "TopicHolder",
+        "extends": [
+          "bpmn:ServiceTask"
+        ],
+        "properties": [
+          {
+            "name": "description",
+            "isAttr": true,
+            "type": "String"
+          },
+          {
+            "name": "title",
+            "isAttr": true,
+            "type": "String"
+          }
+        ]
+      }
+    ],
+    "prefix": "custom",
+    "xml": {
+      "tagAlias": "lowerCase"
+    }
+  }
