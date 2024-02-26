@@ -10,11 +10,11 @@ import ServiceSvg from '../../icons/menu.svg';
    * @param {ContextPad} contextPad
    * @param {CommandStack} commandStack
    */
-  export default function ColorPicker(eventBus, contextPad, commandStack) {
+  export default function ColorPicker(contextPad, commandStack) {
     contextPad.registerProvider(this);
     commandStack.registerHandler('shape.updateColor', UpdateColorHandler);
   
-    function changeColor(event, element) {
+    function changeColor(element) {
       if(is(element, 'bpmn:Task')) {
         document.getElementsByClassName('djs-overlay-context-pad')[0].style.display = "none"
         document.getElementsByClassName('Modal')[0].style.display = "flex"

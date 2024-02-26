@@ -2,9 +2,6 @@ import { is } from "bpmn-js/lib/util/ModelUtil";
 
 class DeleteElementProvider {
   constructor(contextPad) {
-    // this.modeling = modeling;
-
-    // popupMenu.registerProvider("bpmn-replace", this);
 
     contextPad.registerProvider(this);
   }
@@ -21,8 +18,6 @@ class DeleteElementProvider {
       // });;
     }
     return function(entries) {
-        // entries includes all already registered context pad entries
-        // remove end event option from entries, for example
       //  delete entries['append.end-event'];
       //  delete entries['append.append-task'];
       //  delete entries['append.gateway'];

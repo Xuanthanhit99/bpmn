@@ -559,7 +559,6 @@ function VideoPlayer() {
   return (
     <>
       {/* <div className='header'> */}
-      <DsLogo style="1" />
       <div className="flex justify-between items-center px-6 py-5 border-b border-[#DBE0E6] ">
         <div className="text-3xl font-bold text-[#2E3A5B]">
           Thêm mới Workflow
